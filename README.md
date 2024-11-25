@@ -1,43 +1,138 @@
-# Getting Started with Create React App
+# **RBAC UI**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive and functional MERN stack application with a **sidebar, member table, and group creation functionality**. The project mimics a professional UI, inspired by **WhatsApp Web**, and includes CRUD operations, member management, and group creation features.
 
-## Available Scripts
+## **Table of Contents**
+1. [Project Overview](#project-overview)
+2. [Features](#features)
+3. [Technologies Used](#technologies-used)
+4. [Setup Instructions](#setup-instructions)
+5. [Usage](#usage)
+6. [Folder Structure](#folder-structure)
+7. [Future Improvements](#future-improvements)
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## **Project Overview**
 
-### `npm test`
+This project is a **responsive web application** built using the MERN stack (**MongoDB**, **Express**, **React**, and **Node.js**). It provides a platform for managing members, displaying detailed user information, and creating groups dynamically. The design and functionality are intuitive and modern, catering to a seamless user experience.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Key Objectives:
+- Enable CRUD operations on members.
+- Allow group creation with a simple UI.
+- Provide a professional and responsive design for all screen sizes.
+- Maintain scalability and modularity for future enhancements.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## **Features**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Sidebar Navigation**:
+   - A sleek, responsive sidebar with icons for quick navigation.
+   - Hover effects and active state indication.
+   - Accessible design for both desktop and mobile.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Members Table**:
+   - Displays member details (name, email, role, etc.) in a structured format.
+   - Includes **Edit** and **Delete** actions for each member.
+   - Styled like a professional chat application with user images and details.
 
-### `npm run eject`
+3. **Group Creation**:
+   - A "Create Group" button in the header.
+   - Opens a modal where users can select members to form a group.
+   - Confirms group creation with selected members.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **CRUD Operations**:
+   - Add, edit, and delete members with ease.
+   - Instant updates on the table without requiring a backend.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. **Responsive Design**:
+   - Ensures optimal usability across desktop, tablet, and mobile devices.
+   - Styled components that adapt seamlessly to various screen sizes.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## **Technologies Used**
+
+- **Frontend**: React, CSS Modules
+- **State Management**: React State
+- **Styling**: CSS (responsive, clean, and modern)
+- **Icons**: Font Awesome
+
+---
+
+## **Setup Instructions**
+
+Follow these steps to get the project running locally:
+
+### **Prerequisites**
+1. **Node.js** (>= v14)
+2. **npm** or **yarn**
+3. A modern web browser (Chrome, Firefox, Edge)
+
+### **Installation**
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/project-name.git
+   cd project-name
+2. **Install Dependencies**
+   ```bash
+   npm install
+1. **Run the Development Server**
+   ```bash
+   npm start
+
+   
+## **Usage**
+
+- **Sidebar**: Use the sidebar for navigation. Click icons to see active states.
+- **Member Table**: View and manage member details.
+  - Click "Edit" to modify member details.
+  - Click "Delete" to remove a member.
+- **Create Group**:
+    -  Click the "Create Group" button in the header.
+    -  Select members from the modal.
+    -  Confirm group creation.
+- **Responsive UI**: Resize the browser to see the design adapt to different screen sizes.
+
+## **Folder Structure**
+    project-name/
+    ├── public/               # Static assets
+    ├── src/
+    │   ├── components/       # Reusable components
+    │   │   ├── Header.js
+    │   │   ├── Sidebar.js
+    │   │   ├── MembersTable.js
+    │   │   └── Modal.js
+    │   ├── styles/           # Component-specific styles
+    │   │   ├── Header.css
+    │   │   ├── Sidebar.css
+    │   │   ├── MembersTable.css
+    │   │   └── Modal.css
+    │   ├── App.js            # Main app component
+    │   └── index.js          # Entry point
+    ├── package.json          # Dependencies and scripts
+    └── README.md             # Project documentation
+
+
+## **Future Improvements**
+
+- **Backend Integration**: 
+  - Add a backend using Express and MongoDB.
+  - Enable persistent storage of members and groups.
+    
+- **Search and Filter**:
+    -  Implement a search bar to filter members.
+    -  Add sorting by role, expiration date, or projects.
+      
+- **User Authentication**:
+    -  Integrate a login system with role-based access control.
+      
+- **Theme Customization**:
+    -  Allow users to switch between light and dark themes.
+
 
 ## Learn More
 
