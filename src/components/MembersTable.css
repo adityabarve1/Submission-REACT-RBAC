@@ -1,0 +1,161 @@
+/* Base Container for Members Table */
+.members-table {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Table Layout using Flexbox */
+  .table {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Table Row */
+  .table-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #e1e1e1;
+    align-items: center;
+  }
+  
+  /* Profile Cell */
+  .profile-cell {
+    flex: 0 0 50px;
+  }
+  
+  .profile-pic {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Message Cell */
+  .message-cell {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+  }
+  
+  .message-header {
+    display: flex;
+    flex-direction: column; /* Stack name, username, and email vertically */
+    margin-bottom: 10px;
+  }
+  
+  .name {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .username {
+    color: #6d6d6d;
+    font-size: 12px;
+  }
+  
+  .email {
+    color: #0088cc; /* Set color to blue like WhatsApp email text */
+    font-size: 13px;
+    margin-top: 5px; /* Space between name/username and email */
+  }
+  
+  .message-body {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .projects, .access-expiration, .role, .expiration {
+    margin-bottom: 5px;
+  }
+  
+  .message-body div {
+    font-size: 13px;
+    color: #666;
+  }
+  
+  /* Actions Cell */
+  .actions-cell {
+    flex: 0 0 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .action-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Edit Button */
+  .edit-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Delete Button */
+  .delete-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: #e53935;
+  }
+  
+  /* Hover Effect for Row */
+  .table-row:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .table {
+      flex-direction: column;
+    }
+  
+    .table-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .message-cell {
+      padding-left: 0;
+    }
+  
+    .actions-cell {
+      flex: 0 0 auto;
+    }
+  
+    .projects, .access-expiration, .role, .expiration {
+      font-size: 12px;
+    }
+  
+    .profile-pic {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .action-btn {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  }
+  
